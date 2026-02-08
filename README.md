@@ -2,6 +2,21 @@
 
 A Flutter application for discovering and exploring local events in Bangladesh, featuring interactive maps and detailed event information.
 
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/f2131d45-78b2-4ee8-aff3-fe0f47343914" width="250" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/421b9085-ac88-435f-94ae-0d8f5a75cbe3" width="250" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/661cdd99-fdb1-44f5-870b-636ad430a89c" width="250" />
+    </td>
+  </tr>
+</table>
+
+
 ## Features
 
 - 📍 **Location-based Events** - Browse events from Dhaka, Chittagong, and other cities
