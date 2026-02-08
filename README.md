@@ -128,11 +128,6 @@ This project was developed as part of Ostad Batch 11 coursework with the followi
 5. **Widget Refactoring** - Component extraction for better code organization
 6. **Bug Fixes** - Resolved Provider build exceptions and state management issues
 
-## Known Issues & Solutions
-
-- **Provider Build Exception**: Fixed by moving `loadEvent()` call from `initState()` to avoid calling `setState()` during build
-- **Autocomplete Issues**: VS Code Flutter autocomplete can be resolved by restarting the Dart Analysis Server
-
 ## Future Enhancements
 
 - [ ] Real API integration for live event data
