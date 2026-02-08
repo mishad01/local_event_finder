@@ -1,8 +1,4 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-import 'package:local_event_finder/models/event.dart';
 import 'package:local_event_finder/proiders/event_provider.dart';
 import 'package:local_event_finder/screens/event_details.dart';
 import 'package:local_event_finder/screens/widget/event_card.dart';
@@ -19,7 +15,9 @@ class _State extends State<EventListScreen> {
   @override
   void initState() {
     super.initState();
-    context.read<EventProvider>().loadEvent();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.read<EventProvider>().loadEvent();
+    });
   }
 
   @override
@@ -34,7 +32,7 @@ class _State extends State<EventListScreen> {
         builder: (context, eventProvider, child) {
           //Loading state
           if (eventProvider.isLoading && eventProvider.events.isEmpty) {
-            return CircularProgressIndicator();
+            return Center(child: CircularProgressIndicator());
           }
 
           //Error State

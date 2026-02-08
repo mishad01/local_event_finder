@@ -29,11 +29,13 @@ class _EventMapWidgetState extends State<EventMapWidget> {
     return Container(
       height: 300,
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(16)),
+      clipBehavior: Clip.antiAlias,
       child: GoogleMap(
         initialCameraPosition: CameraPosition(
           target: LatLng(widget.latitude, widget.longitude),
           zoom: 15,
         ),
+
         markers: {
           Marker(
             markerId: const MarkerId('event-location'),
