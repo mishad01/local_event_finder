@@ -43,3 +43,22 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Environment variables and API keys
+.env
+.env.local
+.env.*.local
+*.env
+
+# Google Maps API key files
+google_maps_api_key.txt
+api_keys.txt
+secrets.txt
+
+# iOS API key configuration
+/ios/Runner/GoogleService-Info.plist
+/ios/Runner/Secrets.swift
+
+# Android API key configuration
+/android/app/src/main/res/values/secrets.xml
+/android/local.properties

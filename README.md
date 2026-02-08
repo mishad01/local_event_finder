@@ -62,10 +62,21 @@ lib/
    ```
 
 3. **Configure Google Maps API**
+   
+   > **🔐 Security Note**: API keys are stored in separate configuration files that are excluded from version control.
+   
    - Get an API key from [Google Cloud Console](https://console.cloud.google.com/)
-   - Add the API key to platform-specific configuration files:
-     - **Android**: `android/app/src/main/AndroidManifest.xml`
-     - **iOS**: `ios/Runner/AppDelegate.swift`
+   - Follow the detailed setup guide in [API_KEY_SETUP.md](API_KEY_SETUP.md)
+   - Quick setup:
+     ```bash
+     # Android
+     cp android/app/src/main/res/values/secrets.xml.example android/app/src/main/res/values/secrets.xml
+     # Edit secrets.xml and add your API key
+     
+     # iOS
+     cp ios/Runner/Secrets.swift.example ios/Runner/Secrets.swift
+     # Edit Secrets.swift and add your API key
+     ```
 
 4. **Run the app**
    ```bash
